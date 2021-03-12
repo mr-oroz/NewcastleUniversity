@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TAIWIND</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="m-o p-o font-sans leading-normal tracking-normal bg-gray-300">
+<div class="w-full md:w-1/6 bg-gray-900 md:bg-gray-900 px-2 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-16 md:h-screen md:border-r-4 md:border-gray-600">
+    <div class="list-reset flex flex-row md:flex-col text-center md:text-left">
+        <img class="w-60 ml-2" src="./assets/img/NUMED-LOGO.png" alt=""/>
+    </div>
+    <div class="md:relative mx-auto lg:float-left lg:px-6 pt-20">
+        <ul class="list-reset flex flex-row md:flex-col text-center md:text-left">
+            <li class="text-gray-200 no-underline hover:text-yellow-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-yellow-700">
+                <a class="text-xl" href="#">Dashboard</a>
+            </li>
+            <li class="text-gray-200 no-underline hover:text-yellow-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-yellow-700">
+                <a class="text-xl" href="#">Events</a>
+            </li>
+            <li class="text-gray-200 no-underline hover:text-yellow-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-yellow-700">
+                <a class="text-xl" href="#">Booths</a>
+            </li>
+            <li class="text-gray-200 no-underline hover:text-yellow-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-yellow-700">
+                <a class="text-xl" href="#">Pages</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="sm:pl-64">
+    <header class="bg-gray-900 w-full h-36">
+        <div class="flex justify-start pt-4">
+            <h2 class="text-current text-3xl ml-6 text-gray-200">
+                Newcastle University Virtual Open Day
+            </h2>
+        </div>
+        <div class="container mx-auto">
+            <div class="flex justify-start pt-5 divide-y divide-gray-900">
+                <div class="flex justify-around ml-4">
+                    <ul class="divide-x divide-white">
+                        <li class=" inline-block py-3 px-3 pr-12 justify-center">
+                            <a href="#" class="text-gray-200 hover:text-yellow-700">Basic info</a>
+                        </li>
+                        <li class="inline-block py-3 px-3 pr-12 justify-center">
+                            <a href="#" class="text-gray-200 hover:text-yellow-700"> Atendee info</a>
+                        </li>
+                        <li class="inline-block py-3 px-3  pr-12 justify-center">
+                            <a href="#" class="text-gray-200 hover:text-yellow-700">Landing info</a>
+                        </li>
+                        <li class="inline-block py-3 px-3 pr-12 justify-center">
+                            <a href="#" class="text-gray-200 hover:text-yellow-700">Booths</a>
+                        </li>
+                        <li class="inline-block py-3 px-3 pr-12 justify-center">
+                            <a href="#" class="text-gray-200 hover:text-yellow-700"> Reminders</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="ml-6">
+        <div class="">
+            <div class="flex items-center">
+                <!--                Left-->
+                <div class="relative">
+                    <div class="w-60 mt-10 mr-2 flex-shrink-0">
+                        <div class="bg-white p-4 border-2">
+                            <div>
+                                Available booths
+                            </div>
+                            <div class="rounded-md border border-gray-900 px-2 mt-4">
+                                <input class="outline-none" type="text" placeholder="Search booth"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute t-full w-60">
+                        <div class="bg-white border-2 p-20">
+                            <img src="" alt="">
+                            <div class="text-gray-500 text-lg text-center">
+                                No booths to select
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                Center-->
+                <div class="relative">
+                    <div class="w-80 mr-2 flex-shrink-0 divide divide-gray-900">
+                        <div class="bg-white p-4 border-2 flex flex-row justify-between">
+                            <div>
+                                default hall
+                            </div>
+                            <div class="flex flex-row">
+                                <div class="mr-5 hover:bg-gray-600 rounded-md ">
+                                    <span class="px-2">Hall Designer </span>
+                                </div>
+                                <img class="h-4 mt-1 cursor-pointer" src="./assets/img/ellipsis-h-solid.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute t-full w-80">
+                        <div class="bg-white border-2 p-4">
+                            <div class="flex flex-row justify-start">
+                                <img class="h-4 mt-1 cursor-pointer " src="./assets/img/plus-solid.svg" alt="">
+                                <div class="text-gray-900 ml-4">
+                                    Add a booths
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                Right-->
+                <div class="w-80 mr-2 flex-shrink-0">
+                    <div class="bg-white p-4 border-2 flex flex-row justify-start">
+                        <img class="h-4 mt-1 cursor-pointer" src="./assets/img/plus-solid.svg" alt="">
+                        <div class="ml-5">
+                            Add another hall
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+<div class="w-full md:w-1/5 px-2 text-center fixed bottom-0 md:pt-8 md:top-0 md:right-0 h-16 md:h-screen md:border-l-4 md:border-gray-600">
+    <div class="w-full md:w-1/5 bg-gray-900 md:bg-gray-900 fixed text-center h-16">
+        <div class="text-left pl-4">
+            <h2 class="text-gray-200 text-xl">NEW Booths</h2>
+        </div>
+        <div class="pt-4 text-left pl-4">
+            <span class="text-gray-200 text-sm">
+                Get started by filling the information below to create your new booth
+            </span>
+        </div>
+    </div>
+    <div class="relative">
+        <div class="mt-36 flex flex-col">
+            <label class="text-left" for="">Booths Name</label>
+            <input class="outline-none mt-2" type="text">
+        </div>
+        <div class="mt-4 flex flex-col">
+            <label class="text-left" for="">Short Name</label>
+            <input class="outline-none mt-2" type="text">
+        </div>
+        <div class="mt-4 flex flex-col">
+            <label class="text-left" for="">Description</label>
+            <textarea class="mt-2 outline-none" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <div class="mt-4 flex flex-col">
+            <label class="text-left" for="">Cover photo</label>
+            <div class="border-2 border-dashed flex justify-center flex-col px-2">
+                <img class="h-24" src="./assets/img/cloud-upload-alt-solid.svg" alt="">
+                <input class="ml-5" type="file" placeholder="Uplout o file">
+            </div>
+        </div>
+        <div class="mt-4 flex flex-col">
+            <label class="text-left" for="">Welcom video (You Tube link)</label>
+            <input class="outline-none mt-2" type="text">
+        </div>
+        <div class="mt-10 flex flex-row justify-around">
+            <button class="border-2 p-3 bg-gray-300 rounded outline-none">Cansel</button>
+            <button class=" border-2 p-3 bg-gray-900 rounded outline-none text-gray-200">Save</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
